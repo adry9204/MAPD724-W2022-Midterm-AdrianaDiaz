@@ -30,6 +30,16 @@
 		285A060329B28A7500ADC81F /* engine.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 285A05FD29B28A7500ADC81F /* engine.ogg */; };
 		285A060429B28A7500ADC81F /* engine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 285A05FE29B28A7500ADC81F /* engine.mp3 */; };
 		285A060529B28A7500ADC81F /* thunder.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 285A05FF29B28A7500ADC81F /* thunder.ogg */; };
+		285A060A29B28B4300ADC81F /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A060929B28B4300ADC81F /* GameProtocol.swift */; };
+		285A060C29B28B9000ADC81F /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A060B29B28B9000ADC81F /* GameObject.swift */; };
+		285A060E29B28BF900ADC81F /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A060D29B28BF900ADC81F /* Layer.swift */; };
+		285A061129B28C4000ADC81F /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A061029B28C4000ADC81F /* ScoreManager.swift */; };
+		285A061329B28C6300ADC81F /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A061229B28C6300ADC81F /* CollisionManager.swift */; };
+		285A061629B28CDA00ADC81F /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A061529B28CDA00ADC81F /* Island.swift */; };
+		285A061829B28D0B00ADC81F /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A061729B28D0B00ADC81F /* Cloud.swift */; };
+		285A061A29B28D1A00ADC81F /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A061929B28D1A00ADC81F /* Ocean.swift */; };
+		285A061C29B28D3100ADC81F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A061B29B28D3100ADC81F /* Player.swift */; };
+		285A061E29B29C1A00ADC81F /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 285A060729B28A9000ADC81F /* Dock51.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +68,16 @@
 		285A05FE29B28A7500ADC81F /* engine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = engine.mp3; sourceTree = "<group>"; };
 		285A05FF29B28A7500ADC81F /* thunder.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = thunder.ogg; sourceTree = "<group>"; };
 		285A060729B28A9000ADC81F /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
+		285A060929B28B4300ADC81F /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		285A060B29B28B9000ADC81F /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		285A060D29B28BF900ADC81F /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		285A061029B28C4000ADC81F /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		285A061229B28C6300ADC81F /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
+		285A061529B28CDA00ADC81F /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		285A061729B28D0B00ADC81F /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		285A061929B28D1A00ADC81F /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		285A061B29B28D3100ADC81F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		285A061D29B29B5000ADC81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +110,10 @@
 		285A05C729B2866200ADC81F /* MAPD724-W2022-Midterm-AdrianaDiaz */ = {
 			isa = PBXGroup;
 			children = (
+				285A061D29B29B5000ADC81F /* Info.plist */,
+				285A061429B28CBD00ADC81F /* GameObjects */,
+				285A060F29B28C2900ADC81F /* Managers */,
+				285A060829B28B2500ADC81F /* Core */,
 				285A05DF29B2889400ADC81F /* Assets */,
 				285A05C829B2866200ADC81F /* AppDelegate.swift */,
 				285A05CA29B2866200ADC81F /* GameScene.sks */,
@@ -148,6 +172,36 @@
 				285A060729B28A9000ADC81F /* Dock51.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		285A060829B28B2500ADC81F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				285A060929B28B4300ADC81F /* GameProtocol.swift */,
+				285A060B29B28B9000ADC81F /* GameObject.swift */,
+				285A060D29B28BF900ADC81F /* Layer.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		285A060F29B28C2900ADC81F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				285A061029B28C4000ADC81F /* ScoreManager.swift */,
+				285A061229B28C6300ADC81F /* CollisionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		285A061429B28CBD00ADC81F /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				285A061529B28CDA00ADC81F /* Island.swift */,
+				285A061729B28D0B00ADC81F /* Cloud.swift */,
+				285A061929B28D1A00ADC81F /* Ocean.swift */,
+				285A061B29B28D3100ADC81F /* Player.swift */,
+			);
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +280,7 @@
 				285A060329B28A7500ADC81F /* engine.ogg in Resources */,
 				285A05D929B2866500ADC81F /* LaunchScreen.storyboard in Resources */,
 				285A060029B28A7500ADC81F /* yay.mp3 in Resources */,
+				285A061E29B29C1A00ADC81F /* Dock51.ttf in Resources */,
 				285A05F429B288E400ADC81F /* plane.png in Resources */,
 				285A05CD29B2866200ADC81F /* Actions.sks in Resources */,
 			);
@@ -238,9 +293,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285A061329B28C6300ADC81F /* CollisionManager.swift in Sources */,
 				285A05CF29B2866200ADC81F /* GameScene.swift in Sources */,
+				285A061629B28CDA00ADC81F /* Island.swift in Sources */,
+				285A060A29B28B4300ADC81F /* GameProtocol.swift in Sources */,
+				285A061C29B28D3100ADC81F /* Player.swift in Sources */,
 				285A05D129B2866200ADC81F /* GameViewController.swift in Sources */,
+				285A061829B28D0B00ADC81F /* Cloud.swift in Sources */,
+				285A060E29B28BF900ADC81F /* Layer.swift in Sources */,
 				285A05C929B2866200ADC81F /* AppDelegate.swift in Sources */,
+				285A060C29B28B9000ADC81F /* GameObject.swift in Sources */,
+				285A061129B28C4000ADC81F /* ScoreManager.swift in Sources */,
+				285A061A29B28D1A00ADC81F /* Ocean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +453,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7K5Q798862;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MAPD724-W2022-Midterm-AdrianaDiaz/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -417,6 +482,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7K5Q798862;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MAPD724-W2022-Midterm-AdrianaDiaz/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
