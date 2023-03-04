@@ -6,7 +6,7 @@ class Player : GameObject
     // Initializer
     init()
     {
-        super.init(imageString: "plane", initialScale: 2.0)
+        super.init(imageString: "plane", initialScale: 1.0)
         Start()
     }
     
@@ -29,21 +29,21 @@ class Player : GameObject
     override func CheckBounds()
     {
         // constrain the player on the left boundary
-        if(position.x <= -320)
+        if(position.y <= -130)
         {
-            position.x = -320
+            position.y = -130
         }
         
         // constrain the player on the right boundary
-        if(position.x >= 320)
+        if(position.y >= 130)
         {
-            position.x = 320
+            position.y = 130
         }
     }
     
     override func Reset()
     {
-        position.y = -640
+        position.x = -300
     }
     
     func TouchMove(newPos: CGPoint)

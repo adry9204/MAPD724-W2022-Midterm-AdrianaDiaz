@@ -23,7 +23,7 @@ class GameScene: SKScene
         
         // add the second ocean to the scene
         ocean2 = Ocean()
-        ocean2?.position.y = -627
+        ocean2?.position.x = -627
         addChild(ocean2!)
         
         // add the player to the Scene
@@ -35,7 +35,7 @@ class GameScene: SKScene
         addChild(island!)
         
         // add 3 clouds to the Scene
-        for _ in 0...2
+        for _ in 0...1
         {
             let cloud = Cloud()
             clouds.append(cloud)
@@ -70,18 +70,18 @@ class GameScene: SKScene
     
     func touchDown(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -300, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -300, y: pos.y))
         
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -300, y: pos.y))
         
     }
     
