@@ -40,6 +40,8 @@
 		285A061A29B28D1A00ADC81F /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A061929B28D1A00ADC81F /* Ocean.swift */; };
 		285A061C29B28D3100ADC81F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A061B29B28D3100ADC81F /* Player.swift */; };
 		285A061E29B29C1A00ADC81F /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 285A060729B28A9000ADC81F /* Dock51.ttf */; };
+		285A062129B3B11100ADC81F /* EndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 285A062029B3B11100ADC81F /* EndScene.sks */; };
+		285A062329B3B13200ADC81F /* EndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A062229B3B13200ADC81F /* EndScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		285A061929B28D1A00ADC81F /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
 		285A061B29B28D3100ADC81F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		285A061D29B29B5000ADC81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		285A062029B3B11100ADC81F /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
+		285A062229B3B13200ADC81F /* EndScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,8 @@
 			children = (
 				285A05CA29B2866200ADC81F /* GameScene.sks */,
 				285A05CE29B2866200ADC81F /* GameScene.swift */,
+				285A062029B3B11100ADC81F /* EndScene.sks */,
+				285A062229B3B13200ADC81F /* EndScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				285A05EE29B288E400ADC81F /* ocean.png in Resources */,
 				285A060429B28A7500ADC81F /* engine.mp3 in Resources */,
 				285A05F529B288E400ADC81F /* plane2.png in Resources */,
+				285A062129B3B11100ADC81F /* EndScene.sks in Resources */,
 				285A05ED29B288E400ADC81F /* ocean.gif in Resources */,
 				285A060229B28A7500ADC81F /* yay.ogg in Resources */,
 				285A05F829B2896700ADC81F /* ocean_landscape.png in Resources */,
@@ -313,6 +320,7 @@
 				285A060C29B28B9000ADC81F /* GameObject.swift in Sources */,
 				285A061129B28C4000ADC81F /* ScoreManager.swift in Sources */,
 				285A061A29B28D1A00ADC81F /* Ocean.swift in Sources */,
+				285A062329B3B13200ADC81F /* EndScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
