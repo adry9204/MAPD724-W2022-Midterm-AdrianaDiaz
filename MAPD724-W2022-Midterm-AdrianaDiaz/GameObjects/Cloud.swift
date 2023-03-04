@@ -54,9 +54,6 @@ class Cloud : GameObject
         position.x = CGFloat(randomX)
         
         isColliding = false
-        print(horizontalSpeed)
-        print(verticalSpeed)
-        print("*******************************")
     }
     
     // public method
